@@ -1,0 +1,112 @@
+/* ===== Base Styles ===== */
+body {
+  background-color: #000;
+  color: #17a2b8; /* info color */
+  font-family: Arial, sans-serif;
+}
+
+/* ===== Profile Picture ===== */
+.profile-pic {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #17a2b8;
+}
+
+/* ===== Social Icons ===== */
+.social-icons a i {
+  font-size: 1.5rem;
+  transition: 0.3s;
+}
+
+/* Real brand colors */
+.social-icons .linkedin { color: #0077b5; } /* LinkedIn blue */
+.social-icons .github { color: #333; }      /* GitHub black */
+.social-icons .twitter { color: #1da1f2; }  /* Twitter blue */
+.social-icons .instagram { color: #E4405F; } /* Instagram pink-red */
+.social-icons .whatsapp { color: #25D366; }  /* WhatsApp green */
+
+/* Hover effect */
+.social-icons a:hover i {
+  transform: scale(1.2);
+}
+
+/* ===== Buttons ===== */
+.btn-custom {
+  margin-right: 10px;
+}
+
+/* ===== Neon Text Effect ===== */
+.neon-text {
+  color: #0ff;
+  font-size: 1.8rem;
+  text-shadow:
+    0 0 2px #0ff,
+    0 0 5px #0ff;
+  font-weight: 600;
+  font-size: 1.3rem !important; 
+}
+
+/* ===== Active Page Underline ===== */
+.nav-link {
+  position: relative;
+  color:#08a696;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #17a2b8;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #0ff; /* optional hover color */
+}
+
+/* ===== Responsive Adjustments ===== */
+
+/* Large tablets / small laptops */
+@media (max-width: 992px) {
+  .neon-text {
+    font-size: 1.6rem;
+  }
+  .profile-pic {
+    width: 240px;
+    height: 240px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .neon-text {
+    font-size: 1.4rem;
+  }
+  .profile-pic {
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 576px) {
+  .neon-text {
+    font-size: 1.2rem;
+    text-shadow:
+      0 0 4px #00ffff,
+      0 0 8px #00ffff,
+      0 0 16px #00ffff;
+  }
+  .profile-pic {
+    width: 170px;
+    height: 170px;
+  }
+}
