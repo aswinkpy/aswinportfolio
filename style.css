@@ -22,6 +22,14 @@ body {
   }
 }
 
+@media (min-width: 992px) {
+  .profile-pic {
+    position: relative;
+    top: -20px;
+  }
+}
+
+
 
 /* ===== Social Icons ===== */
 .social-icons a i {
@@ -119,6 +127,7 @@ body {
     height: 170px;
   }
 }
+
 
 
 
