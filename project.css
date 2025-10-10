@@ -1,0 +1,86 @@
+/* ===== GLOBAL ===== */
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+h1 {
+  text-align: center;
+  color: #00ffff;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  text-shadow: 0 0 8px #00ffff66;
+}
+
+/* ===== NAVBAR ===== */
+
+
+.neon-text {
+  color: #0ff;
+  font-weight: 600;
+  font-size: 1.3rem !important;
+  text-shadow:
+    0 0 2px #0ff,
+    0 0 5px #0ff;
+}
+
+.nav-link {
+  position: relative;
+  color:#08a696;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+
+
+/* ===== PROJECT SECTION ===== */
+.projects-section {
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Project Cards */
+.project-card {
+  background-color: #111;
+  border-left: 4px solid #00ffff;
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 15px #00ffff33;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.project-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 25px #00ffff66;
+}
+
+.project-card h3 {
+  color: #00ffff;
+  text-shadow: 0 0 8px #00ffff66;
+  margin-bottom: 12px;
+}
+
+.project-card p {
+  color: #ddd;
+  line-height: 1.6;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .project-card {
+    padding: 20px;
+  }
+
+  .navbar-brand h3 {
+    font-size: 1.2rem;
+  }
+}
