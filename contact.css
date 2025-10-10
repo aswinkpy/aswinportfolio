@@ -4,21 +4,31 @@ body {
   color: #fff;
   font-family: Arial, sans-serif;
   overflow-x: hidden;
+  animation: pageFadeZoom 1.3s ease-in-out forwards;
+  transform-origin: center;
+}
+
+/* ===== Page Zoom + Fade Animation ===== */
+@keyframes pageFadeZoom {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 /* ===== Navbar Links ===== */
 .navbar .nav-link {
   position: relative;
-  color:#08a696; !important;
+  color: #08a696 !important;
   transition: color 0.3s ease;
 }
 
-/* Hover effect */
-
-
-/* Remove underline from active link (no glow, no border) */
 .navbar .nav-link.active::after {
-  content: none !important;
+  content: none !important; /* No underline for active link */
 }
 
 /* ===== Contact Card ===== */
@@ -28,7 +38,7 @@ body {
   max-width: 400px;
   padding: 30px;
   text-align: center;
-  box-shadow: 0 0 20px #0ff33;
+  box-shadow: 0 0 20px #0ff3; /* subtle glow */
   margin: auto;
 }
 
@@ -78,17 +88,8 @@ body {
   font-weight: bold;
 }
 
-.neon-text {
-  color: #0ff;
-  font-size: 1.3rem !important;
-  text-shadow:
-    0 0 2px #0ff,
-    0 0 5px #0ff;
-  font-weight: 600;
-}
-
 .modal-header .btn-close {
-  filter: invert(1); /* White close button */
+  filter: invert(1); /* white close button */
 }
 
 .modal-body label {
@@ -110,6 +111,16 @@ body {
   box-shadow: 0 0 10px #0ff;
 }
 
+/* ===== Neon Text ===== */
+.neon-text {
+  color: #0ff;
+  font-size: 1.3rem !important;
+  font-weight: 600;
+  text-shadow:
+    0 0 2px #0ff,
+    0 0 5px #0ff;
+}
+
 /* ===== Responsive ===== */
 @media (max-width: 576px) {
   .contact-card {
@@ -121,19 +132,3 @@ body {
     width: 50%;
   }
 }
-@keyframes pageFadeZoom {
-  0% {
-    opacity: 0;
-    transform: scale(0.8);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-body {
-  animation: pageFadeZoom 1.3s ease-in-out forwards;
-  transform-origin: center;
-}
-
