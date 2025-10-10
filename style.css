@@ -8,6 +8,7 @@ body {
 /* ===== Profile Picture ===== */
 .profile-pic {
   top: 150px;
+  right: 250px;
   width: 350px;
   height: 350px;
   object-fit: cover;
@@ -111,5 +112,6 @@ body {
     height: 170px;
   }
 }
+
 
 
